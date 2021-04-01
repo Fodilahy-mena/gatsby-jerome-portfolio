@@ -37,10 +37,10 @@ const StyledContentWrapper = styled(ContentWrapper)`
   }
 `
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   font-size: 0.875rem;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: ${({ theme, $darkMode }) =>
     $darkMode ? theme.colors.primary : theme.colors.background};
   letter-spacing: 1px;
@@ -61,7 +61,7 @@ const Footer = () => {
         </Link>
         <div className="footer-links" data-testid="footer-links">
           {footerLinks.map(({ name, url }, key) => (
-            <StyledLink key={key} to={url} $darkMode={darkMode}>
+            <StyledLink key={key} href={url} $darkMode={darkMode}>
               {name}
             </StyledLink>
           ))}

@@ -48,6 +48,9 @@ const StyledContentWrapper = styled(ContentWrapper)`
         margin-left: 2rem;
       }
     }
+    .onja {
+      color: #00b2d8;
+    }
     .about-author {
       border-radius: ${({ theme }) => theme.borderRadius};
       box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.16);

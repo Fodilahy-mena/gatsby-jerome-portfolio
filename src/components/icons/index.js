@@ -5,7 +5,7 @@ import IconXing from "./xing"
 import IconLinkedIn from "./linkedin"
 import IconMedium from "./medium"
 import IconGitHub from "./github"
-import IconBehance from "./behance"
+import IconPhone from "./phone"
 import IconExternal from "./external"
 import IconMail from "./mail"
 
@@ -20,8 +20,8 @@ const Icon = ({ name, color }) => {
       return <IconMedium color={color} />
     case "github":
       return <IconGitHub color={color} />
-    case "behance":
-      return <IconBehance color={color} />
+    case "phone":
+      return <IconPhone color={color} />
     case "external":
       return <IconExternal color={color} />
     case "mail":

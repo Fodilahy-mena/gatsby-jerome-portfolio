@@ -1,4 +1,14 @@
-# Gatsby Starter Portfolio Minimal
+# Jerome Emilien Portfolio built with Gatsby
+
+This is my personal portfolio, I built it with Gatsby. I followed the instructions bellow and converted the contents according to the necessities.
+
+<a href="https://jerome-emilien.netlify.app/" target="_blank"><strong>>> LIVE DEMO</strong></a>
+---
+
+<img src="demo.png" alt="Jerome Emilien Portfolio demo" width="600" />
+
+---
+## About Gatsby Starter Portfolio Minimal
 
 #### A modern one-page portfolio with a clean yet expressive design.
 
@@ -10,17 +20,6 @@ Just install the starter, add your content, and there you go!
 
 <a href="#sections">Sections</a> · <a href="#features">Features</a> · <a href="#how-to-start">How to Start</a> · <a href="#edit-content">Edit Content</a> · <a href="#edit-theme">Edit Theme</a> · <a href="#edit-page-structure">Edit Page Structure</a> · <a href="#feedback">Feedback</a>
 
-<a href="https://gatsby-starter-portfolio-minimal.netlify.app/" target="_blank"><strong>>> LIVE DEMO</strong></a>
-
-<a href="https://konstantin.digital/" target="_blank"><strong>>> LIVE DEMO (with Splash Screen and Cookie Bar)</strong></a>
-
-**New Features:** 🌛 Dark Mode · 🪟 Splash Screen · 🍪 Cookie Consent Bar
-
----
-
-<img src="screenshot.png" alt="Gatsby Starter Portfolio Minimal Screenshot" width="600" />
-
----
 
 ## Sections
 
@@ -46,23 +45,6 @@ Add tracking services like Google Analytics to your site and display a GDPR-comp
 
 If the user's OS is set to using dark mode, the Gatsby Starter will automatically switch to a dark theme too.
 
-#### 🕹️ Quick and Easy Setup - Add content and deloy.
-
-Just install the starter, add your content, and deploy it! This starter works seamlessly with hosts like Netlify.
-
-#### 📓 Content Integration via MDX - No external CMS needed.
-
-MDX is a Markdown format that allows you to enrich your content with React components. This makes it fully customizable without external dependencies.
-
-#### 🧰 Extendable Layout - Add more sections as you like.
-
-The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to the project section without additional coding.
-
-#### 💅 Responsive Design - With freshening animations.
-
-The starter is designed with a mobile-first approach and looks perfect on small and large breakpoints. Moreover, it has some nice and smooth animations.
-
-#### <img src="http://logok.org/wp-content/uploads/2015/10/Medium-logo-old.png" alt="Medium Icon" width="20" /> Medium Integration - Features latest articles.
 
 In case you are a writer on Medium, the starter has a easy to use Medium integration that allows you to feature your latest articles.
 
@@ -157,17 +139,6 @@ If you want to add your own custom sections, there is a section template you can
 
 ---
 
-## Feedback
-
-Designing and building a portfolio from scratch can be tough. To inspire you and provide you a foundation to build upon, I've decided to publish [my personal website](https://konstantin.digital) as a Gatsby Starter. This boilerplate project should motivate you to build your own awesome portfolio with Gatsby.
-
-I always appreciate feedback, so share your thoughts and suggestions with me: [mail@konstantin.digital](mailto:mail@konstantin.digital)
-
-If you find any bugs or have feature suggestions, create a new issue or pull request 🙏
-
-Thanks a lot for using this starter! 💪
-
----
 
 ## License
 

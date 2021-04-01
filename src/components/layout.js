@@ -32,7 +32,8 @@ const Layout = ({ children }) => {
   const theme = darkModeEnabled ? darkTheme : lightTheme
 
   return (
-    <StyledLayoutWrapper id="layout-wrapper" data-useCookieBar={useCookieBar}>
+    // data-useCookieBar={useCookieBar} was removed from StyledLayoutWrapper prop
+    <StyledLayoutWrapper id="layout-wrapper">
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Header />

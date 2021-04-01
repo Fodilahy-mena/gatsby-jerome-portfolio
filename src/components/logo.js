@@ -6,7 +6,8 @@ import { siteShortTitle } from "../../config"
 
 const StyledLogo = styled.div`
   position: relative;
-  z-index: 13;
+  z-index: 3;
+  line-height: normal;
 
   font-size: ${({ size }) => (size ? size : "1.75rem")};
   font-weight: 900;

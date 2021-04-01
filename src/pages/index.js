@@ -140,7 +140,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             category
-            emoji
             external
             github
             screenshot {

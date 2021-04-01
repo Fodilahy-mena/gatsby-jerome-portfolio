@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useContext } from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
 import { navLinks } from "../../config"
+import Context from "../context"
 
 const StyledNav = styled.nav`
   display: none;
@@ -35,6 +36,7 @@ const StyledNav = styled.nav`
       width: 100%;
     }
   }
+
   .cta-btn {
     width: auto;
     height: auto;
@@ -52,9 +54,14 @@ const StyledNav = styled.nav`
     }
   }
 `
-
+const Button = styled.button`
+  color: ${({ theme }) => theme.colors.primary};
+  cursor: pointer;
+`
 const Navbar = () => {
   const { menu, button } = navLinks
+  const { state, setState } = useContext(Context)
+  const { darkMode } = state
   return (
     <StyledNav>
       {menu.map(({ name, url }, key) => {
@@ -64,7 +71,7 @@ const Navbar = () => {
           </Link>
         )
       })}
-      {button.useFileName ? (
+      {/* {button.useFileName ? (
         <a
           className="cta-btn"
           href={`/${button.fileName}`}
@@ -77,7 +84,13 @@ const Navbar = () => {
         <Link className="cta-btn" to={button.url}>
           {button.name}
         </Link>
-      )}
+      )} */}
+      <Button
+        className="cta-btn"
+        onClick={() => setState({ ...state, darkMode: !darkMode })}
+      >
+        {darkMode ? "Light" : "Dark"}
+      </Button>
     </StyledNav>
   )
 }

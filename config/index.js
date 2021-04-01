@@ -1,11 +1,10 @@
 module.exports = {
   //-- SITE SETTINGS -----
-  author: "@konstantinmuenster",
+  author: "@jerome-emilien",
   siteTitle: "Jerome Emilien Portfolio",
-  siteShortTitle: "Jerome Portfolio", // Used as logo text in header, footer, and splash screen
-  siteDescription:
-    "I am specialised with HTML5, CSS, Javascript and React.",
-  siteUrl: "https://jerome-emilien-portfolio.netlify.app/",
+  siteShortTitle: "Jerome Emilien", // Used as logo text in header, footer, and splash screen
+  siteDescription: "I am specialised with HTML5, CSS, Javascript and React.",
+  siteUrl: "https://jerome-emilien.netlify.app/",
   siteLanguage: "en_UK",
   siteIcon: "content/favicon2.png", // Relative to gatsby-config file
   seoTitleSuffix: "Jerome Emilien", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
@@ -16,7 +15,7 @@ module.exports = {
   colors: {
     lightTheme: {
       primary: "#000000",
-      secondary: "#FFF4D9",
+      secondary: " #FFD700",
       tertiary: "#F2F2F2",
       text: "#000000",
       subtext: "#555555",
@@ -54,28 +53,27 @@ module.exports = {
 
   //-- SOCIAL MEDIA SETTINGS -----
   // There are icons available for the following platforms:
-  // Medium, GitHub, LinkedIn, XING, Behance, E-Mail
+  // Medium, GitHub, LinkedIn, XING, Phone, E-Mail
   socialMedia: [
-    {
-      name: "Linkedin",
-      url: "https://www.linkedin.com/in/konstantin-muenster/",
-    },
+    // {
+    //   name: "Linkedin",
+    //   url: "https://www.linkedin.com/in/konstantin-muenster/",
+    // },
     // {
     //   name: "Medium",
     //   url: "https://konstantinmuenster.medium.com/",
     // },
     {
       name: "Github",
-      url:
-        "https://github.com/Fodilahy-mena",
+      url: "https://github.com/Fodilahy-mena",
     },
     // {
-    //   name: "Behance",
-    //   url: "https://www.behance.net/konstanmnster",
+    //   name: "Phone",
+    //   url: "Tel:+261349839586",
     // },
     {
       name: "Mail",
-      url: "jerome:jerome.emi@onja.org",
+      url: "mailto:jerome.emi@onja.org",
     },
   ],
 
@@ -96,20 +94,21 @@ module.exports = {
       },
     ],
     button: {
-      useFileName: true,
+      useFileName: false,
       name: "Resume",
       fileName: "goldenpuppy.pdf", // the file has to be placed inside the static folder at the root level
-      url: "", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
+      url: "/", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
     },
   },
   footerLinks: [
-    {
-      name: "Privacy",
-      url: "/privacy",
-    },
-    {
-      name: "Imprint",
-      url: "/imprint",
-    },
+    // todo
+    // {
+    //   name: "Privacy",
+    //   url: "/privacy",
+    // },
+    // {
+    //   name: "Imprint",
+    //   url: "/imprint",
+    // },
   ],
 }

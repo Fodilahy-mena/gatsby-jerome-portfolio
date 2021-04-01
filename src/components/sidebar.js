@@ -1,9 +1,10 @@
-import React from "react"
+import React, { useContext } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
 import { navLinks } from "../../config"
+import Context from "../context"
 
 const StyledBackdrop = styled.div`
   position: fixed;
@@ -44,7 +45,7 @@ const StyledNav = styled.nav`
   justify-content: center;
   background: ${({ theme }) => theme.colors.background};
   height: 100vh;
-  width: 55%;
+  width: 75%;
   text-align: left;
   padding: 2rem;
   position: relative;
@@ -58,6 +59,9 @@ const StyledNav = styled.nav`
     font-weight: 700;
     text-align: center;
     padding: 1.5rem 0;
+    @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+      font-size: 0.95rem;
+    }
   }
   .cta-btn {
     width: auto;
@@ -69,11 +73,19 @@ const StyledNav = styled.nav`
     border-radius: ${({ theme }) => theme.borderRadius};
     border: 0.125rem solid ${({ theme }) => theme.colors.primary};
     background: ${({ theme }) => theme.colors.background};
+    @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+      font-size: 0.95rem;
+    }
   }
 `
-
+const Button = styled.button`
+  color: ${({ theme }) => theme.colors.primary};
+  cursor: pointer;
+`
 const Sidebar = ({ open, setOpen }) => {
   const { menu, button } = navLinks
+  const { state, setState } = useContext(Context)
+  const { darkMode } = state
   return (
     <>
       <StyledContainer open={open} aria-hidden={!open} tabIndex={open ? 1 : -1}>
@@ -88,7 +100,7 @@ const Sidebar = ({ open, setOpen }) => {
               {name}
             </Link>
           ))}
-          {button.useFileName ? (
+          {/* {button.useFileName ? (
             <a
               className="cta-btn"
               href={`/${button.fileName}`}
@@ -106,7 +118,13 @@ const Sidebar = ({ open, setOpen }) => {
             >
               {button.name}
             </Link>
-          )}
+          )} */}
+          <Button
+            className="cta-btn"
+            onClick={() => setState({ ...state, darkMode: !darkMode })}
+          >
+            {darkMode ? "Light" : "Dark"}
+          </Button>
         </StyledNav>
       </StyledContainer>
       <StyledBackdrop open={open} />

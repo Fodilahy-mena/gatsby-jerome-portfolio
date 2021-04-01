@@ -181,7 +181,7 @@ const Articles = () => {
     //                 background={
     //                   darkMode
     //                     ? darkTheme.colors.tertiary
-    //                     : lightTheme.colors.tertiary
+    //                     : .colors.tertiary
     //                 }
     //               />
     //               <SkeletonLoader
