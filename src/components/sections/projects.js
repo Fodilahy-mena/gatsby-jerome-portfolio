@@ -288,13 +288,13 @@ const Projects = ({ content }) => {
                     <div className="category">{frontmatter.category}</div>
                     <div className="title">{frontmatter.title}</div>
                     <MDXRenderer>{body}</MDXRenderer>
-                    {/* <div className="tags">
+                    <div className="tags">
                       {frontmatter.tags.map(tag => (
                         <Underlining key={tag} highlight>
                           {tag}
                         </Underlining>
                       ))}
-                    </div> */}
+                    </div>
                     <div className="links">
                       {frontmatter.github && (
                         <a
